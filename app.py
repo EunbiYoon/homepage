@@ -8,6 +8,7 @@ import random
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 import numpy as np
 import matplotlib.pyplot as plt
+import plot3
 
 app=Flask(__name__)
 
@@ -18,4 +19,12 @@ def home():
 @app.route('/service')
 def word():
     return render_template("service.html")
+
+@app.route('/verify', methods = ['POST', 'GET'])
+def verify():
+    if request.method == 'POST':
+        fig = plot3.create_figure()
+        output = io.BytesIO()
+        FigureCanvas(fig).print_png(output)
+        return Response(output.getvalue(), mimetype='image/png')
 

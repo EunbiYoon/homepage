@@ -1,0 +1,141 @@
+#service{
+    padding: 100px 15px;
+
+}
+
+#service .project-image{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+#service .project-image .img{
+    width: 100%;
+    height: 450px;
+    background-size: cover !important;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    /*background-attachment: fixed !important;*/
+
+}
+
+#service h1{
+    font-size: 4rem;
+    font-weight: 600;
+    font-style:italic;
+    margin-bottom: 1.5rem;
+}
+
+#service .info .buttons{
+    padding: 20px 0;
+}
+
+#service .info .buttons a{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color:white;
+    background: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+}
+
+#service .info .buttons .fas{
+    color:#ff5253;
+    margin-right: 10px;
+}
+
+#service .info .buttons a:hover{
+    background: #ff5253;
+}
+
+#service .info .buttons a:hover .fas{
+    color: #000;
+}
+
+#service p{
+    display: inline-block;
+    border-radius: 3px;
+    color:#929294;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-decoration: none;
+    margin-bottom: 1.8rem;
+    text-transform: capitalize;
+}
+
+
+#service .technologies{
+    padding: 100px 0;
+}
+
+#service h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    
+}
+
+#service .technologies .icons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+#service .technologies .icons img{
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+}
+#service .technologies .icons img:hover{
+    filter: grayscale(0);
+
+}
+
+#service .technologies .icons .icon img{
+    width: 100%;
+    max-width:60px;
+}
+
+#service .video{
+    text-align: center;
+
+}
+
+
+/*tablet*/
+@media only screen and (max-width: 960px){
+    #service h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    #service p{
+        font-size: 1rem;
+    }
+    #service h3{
+        text-align: center;
+    }
+    #service .video iframe{
+        width: 100% !important;
+    }
+
+}
+
+/*Phones*/
+@media only screen and (max-width: 767px){
+    #service .info .buttons{
+        text-align: center;
+    }
+
+    #service .info .buttons a{
+        margin-bottom: 10px;
+    }
+
+    #service .technologies .icons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
