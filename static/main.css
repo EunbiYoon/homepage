@@ -9,14 +9,13 @@
 @import "project-page/service.css";
 
 body{
-    background: #2f3742;;
+    background: white;
 }
 
 .container{
     max-width: 1150px;
     margin:0 auto;
 }
-
 
 header{
     display: flex;
@@ -25,19 +24,19 @@ header{
 }
 
 header .logo{
-    font-size: 2rem;
-    font-weight: 700;
+    width: 30px;
+    height: 70px;
     text-transform: uppercase;
     color:white;
     display: flex;
 }
 
-header .logo .name{
+header .logo .image{
     padding: 15px 20px;
-    text-decoration: none;
-    color: white;
+
 }
-header .logo .name:hover{
+
+header .logo .image:hover{
     padding: 15px 20px;
     text-decoration: none;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #b56efc, 0 0 20px #b56efc, 0 0 25px #b56efc, 0 0 30px #b56efc, 0 0 35px #b56efc;    
@@ -56,7 +55,7 @@ header .header-menu a{
     font-size: 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
-    color:white;
+    color:black;
     padding: 0 10px;
 }
 
@@ -79,7 +78,7 @@ header .menu-btn {
     cursor: pointer;
 }
 
-.mobile-menu{
+header .mobile-menu{
     display:none;
     background: #fff;
     flex-direction: column;
@@ -96,7 +95,7 @@ header .menu-btn {
     box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
 }
 
-.mobile-menu.active{
+header .mobile-menu.active{
     transform: translate3d(0,0,0);
 }
 

@@ -1,3 +1,60 @@
+#top .container{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+}
+#top .info{
+    padding: 15px 15px ;
+    position: relative;
+}
+#top .symbol{
+    padding: 15px 15px ;
+    position: relative;
+}
+#top h1 {
+    font-size: 80px;
+    text-align: center;
+    color: #fff;
+    animation: glow1 1s ease-in-out infinite alternate;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+#top h2 {
+    font-size: 80px; 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;  
+    color:white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60092, 0 0 20px #e60092, 0 0 25px #e60092, 0 0 30px #e60092, 0 0 35px #e60092; 
+}
+#top h3 {
+    font-size: 70px; 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #b56efc, 0 0 20px #b56efc, 0 0 25px #b56efc, 0 0 30px #b56efc, 0 0 35px #b56efc;    
+}
+
+#top h4 {
+    font-size: 300px; 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;   
+}
+
+#top .neonIcon 
+{
+    text-align: center;
+    animation: flicker4 10s infinite alternate;
+    color: #fff;
+}
+
+
 @keyframes glow1 {
     from {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
@@ -22,86 +79,11 @@
         0 0 150px #0fa;
         }
             
-        20%, 25%, 55% {        
-                text-shadow: none;
-        }  
-     }
+    20%, 25%, 55% {        
+        text-shadow: none;
+    }  
+}
     
-
-#top .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 80px 0;
-    align-items: center;
-}
-#top .info{
-    padding: 15px;
-    position : relative
-}
-
-
-#top .info p{
-    position: relative;
-    color:#919191;
-    text-transform: capitalize;
-    margin-bottom : 4rem;
-    z-index: 1;
-}
-#top .info a{
-    position: relative; 
-    font-size: .9rem;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-decoration: none;
-    padding-bottom: 5px;
-    border-bottom: 2px solid white;
-    z-index: 1;
-    letter-spacing:2px;
-}
-
-#top h1 {
-    font-size: 100px;
-    text-align: center;
-    color: #fff;
-    animation: glow1 1s ease-in-out infinite alternate;
-    position: relative;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    z-index: 1;
-}
-
-#top h2 {
-    font-size: 80px; 
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 100;  
-    color:white;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60092, 0 0 20px #e60092, 0 0 25px #e60092, 0 0 30px #e60092, 0 0 35px #e60092; 
-}
-#top h3 {
-    font-size: 70px; 
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 400;
-    color:white;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #b56efc, 0 0 20px #b56efc, 0 0 25px #b56efc, 0 0 30px #b56efc, 0 0 35px #b56efc;    
-}
-#top h4 {
-    font-size: 500px; 
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 400;   
-}
-
-#top .neonIcon 
-{
-    animation: flicker4 1.5s infinite alternate;
-    color: #fff;
-}
-
-
 
 
 /* tablets*/

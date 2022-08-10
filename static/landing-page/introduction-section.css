@@ -1,5 +1,5 @@
 #introduction-section{
-    padding: 120px 15px;
+    padding: 80px 15px;
 }
 
 #introduction-section .title{
@@ -24,17 +24,17 @@
     0 0 20px white, 
     0 0 30px white,
     0 0 40px white, 
-    0 0 50px #b56efc, 
-    0 0 60px white, 
+    0 0 50px #756efc, 
+    0 0 60px #0c0447, 
     0 0 70px white;
 }
 
 #introduction-section .title h1{
     position: relative;
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 700;
-    color:#16171b;
+    color:white;
     z-index: 1;
     letter-spacing: 4px;
     text-shadow: 0 0 10px #e60092, 
@@ -72,36 +72,42 @@
 }
 
 #introduction-section .introduction-container .box p{
-    font-size: .8rem;
+    font-size: 1.3rem;
     line-height: 1.5;
     color : #b3b3b3
 }
 
 #introduction-section .introduction-container .box.blue h5{ 
-    color: #faf9d8
+    text-shadow: 0 0 5px rgb(128, 87, 0);
+    color:rgb(234, 208, 101);
 }
 #introduction-section .introduction-container .box.blue .fas{
     font-size: 2rem;
     margin-bottom: 2rem;
-    color:#faf9d8;
+    text-shadow: 0 0 5px rgb(128, 87, 0);
+    color:rgb(234, 208, 101);
 }
 
 #introduction-section .introduction-container .box.red h5{ 
-    color: #95cbfa
+    text-shadow: 0 0 5px rgb(2, 0, 128);
+    color:rgb(160, 159, 255);
 }
 #introduction-section .introduction-container .box.red .fas{
     font-size: 2rem;
     margin-bottom: 2rem;
-    color:#95cbfa;
+    text-shadow: 0 0 5px rgb(2, 0, 128);
+    color:rgb(160, 159, 255);
 }
 
 #introduction-section .introduction-container .box.yellow h5{ 
+    text-shadow: 0 0 5px #4d7264;
     color: #a7efd2
 }
 #introduction-section .introduction-container .box.yellow .fas{
     font-size: 2rem;
     margin-bottom: 2rem;
-    color:#a7efd2;
+    text-shadow: 0 0 5px #4d7264;
+    color: #a7efd2
 }
 
 
