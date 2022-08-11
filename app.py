@@ -1,30 +1,26 @@
-from flask import Flask, render_template
-from flask import Flask,render_template,request,redirect
-import io
-from flask import Flask, render_template, Response
-from matplotlib.figure import Figure
-import io
-import random
-from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
-import numpy as np
-import matplotlib.pyplot as plt
-import plot3
+from flask import Flask,render_template,request,redirect,url_for
+app = Flask(__name__)
 
-app=Flask(__name__)
-
-@app.route('/')
-def home():
+@app.route('/', methods=['GET', 'POST'])
+def main():
+    if request.method == 'POST':
+        if request.form.get('action1') == 'Home':
+            return render_template('index.html') # do something
+        elif  request.form.get('action2') == 'Product':
+            return render_template('index.html#product-section') # do something
+        elif  request.form.get('action3') == 'Top Loader':
+            return render_template('index.html#toploader-secton') # do something
+        elif  request.form.get('action4') == 'Front Loader':
+            return render_template('index.html#frontloader-section') # do something
+        elif  request.form.get('action5') == 'Q&A':
+            return render_template('index.html#qna-section') # do something
+        else:
+            pass # unknown
+    elif request.method == 'GET':
+        pass
     return render_template("index.html")
 
-@app.route('/service')
-def word():
-    return render_template("service.html")
+ 
 
-@app.route('/verify', methods = ['POST', 'GET'])
-def verify():
-    if request.method == 'POST':
-        fig = plot3.create_figure()
-        output = io.BytesIO()
-        FigureCanvas(fig).print_png(output)
-        return Response(output.getvalue(), mimetype='image/png')
-
+if __name__ == '__main__':
+    app.run()
