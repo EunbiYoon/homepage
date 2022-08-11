@@ -18,6 +18,7 @@ header{
     display: flex;
     padding: 20px;
     justify-content: space-between;
+    background-color: rgb(255, 255, 255);
 }
 
 header .logo{
@@ -53,19 +54,17 @@ header .header-menu a{
     text-transform: uppercase;
     text-decoration: none;
     color:black;
-    padding: 0 10px;
+    font-weight: 600;
+    padding: 0 50px;
 }
 
 header .header-menu a:hover{
-    font-weight:700;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60092, 0 0 20px #e60092, 0 0 25px #e60092, 0 0 30px #e60092, 0 0 35px #e60092; 
-    box-shadow: black;
-    
+    color:gray;
 }
 
 header .menu-btn {
     font-weight:700;
-    color: #ff5253; 
+    color: #C70851; 
     display: flex;
     justify-content: center;
     align-items:center;

@@ -1,8 +1,6 @@
 #top .container{
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
     align-items: center;
+    padding:80px 0px 80px 0px
 }
 #top .info{
     padding: 15px 15px ;
@@ -13,45 +11,41 @@
     position: relative;
 }
 #top h1 {
-    font-size: 80px;
+    font-size: 100px; 
     text-align: center;
-    color: #fff;
-    animation: glow1 1s ease-in-out infinite alternate;
-    position: relative;
     text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    z-index: 1;
+    font-weight: 300;
+    color:#C70851;
+    font-weight: 800;
 }
 #top h2 {
-    font-size: 80px; 
+    font-size: 90px; 
     text-align: center;
     text-transform: uppercase;
-    font-weight: 100;  
-    color:white;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60092, 0 0 20px #e60092, 0 0 25px #e60092, 0 0 30px #e60092, 0 0 35px #e60092; 
+    font-weight: 400;  
+    color:black;
 }
 #top h3 {
-    font-size: 70px; 
+    font-size: 80px;
     text-align: center;
+    color: gray;
+    position: relative;
     text-transform: uppercase;
     font-weight: 400;
-    color:white;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #b56efc, 0 0 20px #b56efc, 0 0 25px #b56efc, 0 0 30px #b56efc, 0 0 35px #b56efc;    
+    z-index: 1;
 }
-
 #top h4 {
-    font-size: 300px; 
-    text-align: center;
+    font-size: 30px; 
+    text-align:center;
     text-transform: uppercase;
     font-weight: 400;   
 }
 
 #top .neonIcon 
 {
-    text-align: center;
+    text-align: right;
     animation: flicker4 10s infinite alternate;
-    color: #fff;
+    color: gray;
 }
 
 
@@ -72,11 +66,8 @@
         0 0 4px #fff,
         0 0 11px #fff,
         0 0 19px #fff,
-        0 0 40px #0fa,
-        0 0 80px #0fa,
-        0 0 90px #0fa,
-        0 0 100px #0fa,
-        0 0 150px #0fa;
+        0 0 40px #ff84b1,
+        0 0 80px #ff84b1;
         }
             
     20%, 25%, 55% {        

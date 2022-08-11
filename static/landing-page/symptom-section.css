@@ -1,17 +1,20 @@
 #symptom-section{
-    padding: 20px 15px ;
+    padding:20px 15px 200px 15px ;
     margin-bottom:0;
+}
+
+#symptom-section .container{
+    padding: 10px 10px 10px 10px;
 }
 
 #symptom-section .title{
     position: relative;
     width:300;
-    height: 200px;
+    height:100px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60092, 0 0 20px #e60092, 0 0 25px #e60092, 0 0 30px #e60092, 0 0 35px #e60092; 
 }
 
 #symptom-section .title h1{
@@ -26,9 +29,10 @@
 
 #symptom-section .symptom-container{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 300px 300px ;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 10px;
+    width:1200px;
 }
 
 #symptom-section .symptom-container .box{
@@ -81,28 +85,55 @@
     transform: translate3d(0,0,0);
     opacity: 1; 
 }
-/*Box location*/
+/*Box1 location*/
 #symptom-section .symptom-container .box.image1{
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
 
 #symptom-section .symptom-container .box.image1 .image{
-    background : url("../image-page/tl3.png");
+    background : url("../image-page/noise2.jpg");
     height : 100%;
     width : 100%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
-
+/*Box2 location*/
 #symptom-section .symptom-container .box.image2{
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
 #symptom-section .symptom-container .box.image2 .image{
-    background : url("../image-page/tl4.png");
+    background : url("../image-page/cloth.jpg");
+    height : 100%;
+    width : 100%;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+/*Box3 location*/
+#symptom-section .symptom-container .box.image3{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+#symptom-section .symptom-container .box.image3 .image{
+    background : url("../image-page/panel.jpg");
+    height : 100%;
+    width : 100%;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+/*Box4 location*/
+#symptom-section .symptom-container .box.image4{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+#symptom-section .symptom-container .box.image4 .image{
+    background : url("../image-page/drain.jpg");
     height : 100%;
     width : 100%;
     background-size: cover;
@@ -110,10 +141,125 @@
     background-repeat: no-repeat;
 }
 
+/*Box5 location*/
+#symptom-section .symptom-container .box.image5{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
 
+#symptom-section .symptom-container .box.image5 .image{
+    background : url("../image-page/error.png");
+    height : 100%;
+    width : 100%;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
 
+/*Box6 location*/
+#symptom-section .symptom-container .box.image6{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
 
-#symptom-section .symptom-container .box.image1 .image .title .text{
+#symptom-section .symptom-container .box.image6 .image{
+    background : url("../image-page/fill.jpg");
+    height : 100%;
+    width : 100%;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+/*Box7 location*/
+#symptom-section .symptom-container .box.image7{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#symptom-section .symptom-container .box.image7 .image{
+    background : url("../image-page/leak.jpg");
+    height : 100%;
+    width : 100%;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+/*Box8 location*/
+#symptom-section .symptom-container .box.image8{
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+#symptom-section .symptom-container .box.image8 .image{
+    background : url("../image-page/door2.jpg");
+    height : 100%;
+    width : 100%;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+/*Box9 location*/
+#symptom-section .symptom-container .box.image9{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+#symptom-section .symptom-container .box.image9 .image{
+    background : url("../image-page/load.png");
+    height : 100%;
+    width : 100%;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+/*Box10 location*/
+#symptom-section .symptom-container .box.image10{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+#symptom-section .symptom-container .box.image10 .image{
+    background : url("../image-page/electricity.png");
+    height : 100%;
+    width : 100%;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+/*Box11 location*/
+#symptom-section .symptom-container .box.image11{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+#symptom-section .symptom-container .box.image11 .image{
+    background : url("../image-page/smell4.jpg");
+    height : 100%;
+    width : 100%;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+/*Box12 location*/
+#symptom-section .symptom-container .box.image12{
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+#symptom-section .symptom-container .box.image12 .image{
+    background : url("../image-page/app2.png");
+    height : 100%;
+    width : 100%;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+/*Box text */
+#product-section .product-container .box .image .title .text{
     background : black;
     border-radius: 5px;
     padding : 10px 20px;
@@ -121,15 +267,23 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+#product-section .product-container .box .fas{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
 
-
-
+/*Box hover */
 #symptom-section .symptom-container .box h5{
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 2rem;
+}
+#product-section .product-container .box p{
+    font-size: .8rem;
+    line-height: 1.5;
+    color : #b3b3b3
 }
 
 
