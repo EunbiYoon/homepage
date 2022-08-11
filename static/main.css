@@ -4,6 +4,7 @@
 @import "landing-page/introduction-section.css";
 @import "landing-page/product-section.css";
 @import "landing-page/symptom-section.css";
+@import "landing-page/symptom2-section.css";
 
 body{
     background: white;
